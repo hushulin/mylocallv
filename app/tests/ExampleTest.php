@@ -14,4 +14,10 @@ class ExampleTest extends TestCase {
 		$this->assertTrue($this->client->getResponse()->isOk());
 	}
 
+	public function testFunc()
+	{
+		testFunc();
+		echo rand_string(4,3,'');
+	}
+
 }
