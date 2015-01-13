@@ -28,3 +28,8 @@ Route::post('users/forgot_password', 'UsersController@doForgotPassword');
 Route::get('users/reset_password/{token}', 'UsersController@resetPassword');
 Route::post('users/reset_password', 'UsersController@doResetPassword');
 Route::get('users/logout', 'UsersController@logout');
+
+Route::get('/goods', function(){
+	$list = App::make('Good')->getGuarded();
+	dd($list);
+});
