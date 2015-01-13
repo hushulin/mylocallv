@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://lv.synbass.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return array(
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'PRC',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return array(
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'zh-CN',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -122,6 +122,18 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
+		'Way\Generators\GeneratorsServiceProvider',
+        'Laracasts\Flash\FlashServiceProvider',
+        'Clockwork\Support\Laravel\ClockworkServiceProvider',
+        'Zizaco\Confide\ServiceProvider',
+        'Zizaco\Entrust\EntrustServiceProvider',
+        'Thujohn\Rss\RssServiceProvider',
+        'Mews\Purifier\PurifierServiceProvider',
+        'Frozennode\Administrator\AdministratorServiceProvider',
+        'Cviebrock\EloquentSluggable\SluggableServiceProvider',
+        'Cviebrock\EloquentTaggable\TaggableServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
+
 	),
 
 	/*
@@ -188,6 +200,14 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
+
+		'Flash'             => 'Laracasts\Flash\Flash',
+        'Carbon'            => 'Carbon\Carbon',
+        'Entrust'           => 'Zizaco\Entrust\EntrustFacade',
+        'Confide'    		=> 'Zizaco\Confide\Facade',
+        'Rss'               => 'Thujohn\Rss\RssFacade',
+        'Purifier'          => 'Mews\Purifier\Facades\Purifier',
+        'Debugbar' => 'Barryvdh\Debugbar\Facade',
 
 	),
 
